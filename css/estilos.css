@@ -13,14 +13,19 @@ h1{
     color: yellow;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2rem;
 }
 
 h2{
     color: gold;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 25px;
 }
 
-h3{
+p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -55,13 +60,38 @@ h3{
 
 .flex {
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
 
+list-style: none;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    flex-flow: row wrap;
+    align-content: flex-start;
 
+    row-gap: 10px;
+    padding-left: 15px;
+    margin-left: 10px;
 
 }
+
+.flex__hijo { 
+    width: auto;
+    height: 50px;
+    border: 1px solid goldenrod;
+
+}
+
+.flex__hijo2 { 
+    width: auto;
+    height: 50px;
+    
+    
+}
+
 
 .header__icono {
     font-size: 45px;
@@ -84,7 +114,7 @@ justify-content: space-between;
 
 .main{
     background-repeat: repeat;
-    margin-top: 130px;
+    padding: 2rem;
     text-decoration: none;
 }
 
@@ -144,6 +174,8 @@ justify-content: space-between;
     color: rgb(230, 207, 3);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
+    margin-top: 150px;
+    padding: 2rem;
 
     animation-name: icon;
     animation-duration: 3s;
@@ -180,7 +212,7 @@ justify-content: space-between;
     background-color: #FEFEFE;
     color: black;
     width: 20%; 
-    height: 200px; 
+    height: 250px; 
     padding: 32px 32px 32px 32px; 
     margin: 32px 32px 32px 32px; 
     border: 5px solid grey;
@@ -209,7 +241,7 @@ justify-content: space-between;
 
 .card__parrafo {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: gainsboro;
     display: flex;
     flex-direction: column;
@@ -350,9 +382,6 @@ justify-content: space-between;
 }
 
 
-    
-
-
 .nav__item--oculto{
     display: none;
 }
@@ -367,9 +396,10 @@ justify-content: space-between;
 
     .flex {
 
-    
-        flex-direction: column;
-       
+        display: grid;
+        grid-column: auto;
+        align-items: center; 
+        
     }    
     
 
@@ -381,12 +411,27 @@ justify-content: space-between;
     .right{
         text-align: left;
     }
+
+    .cardCh {
+        background-color: #FEFEFE;
+        color: black;
+        width: 200px; 
+        height: 250px; 
+       
+    }
 }
 
 /*Movil*/
 
 @media screen and (max-width:599px) {
 
+
+    .inframe{
+        width: 360px; 
+        height: 215px;
+
+    
+    }
 
     .grid {
         display: grid;
@@ -467,7 +512,7 @@ justify-content: space-between;
             background-color: #FEFEFE;
             color: black;
             width: 200px; 
-            height: 200px; 
+            height: 250px; 
            
         }
 
@@ -476,18 +521,13 @@ justify-content: space-between;
             text-align: center;
         }
 
-        .mainCont{
-           
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
 
         .imagen {
             text-align: center;
              width: 100%;
              height: 75px;
         }
+
 
 
        
@@ -507,7 +547,6 @@ justify-content: space-between;
         }
 
         100%{
-            transform: rotate(360deg);
             opacity: 1;
         }
     }
