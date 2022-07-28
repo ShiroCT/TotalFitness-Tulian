@@ -10,25 +10,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+  <!--Bootstrap-->
+    
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
 </head>
 <body>
-    <header class="header">
-        <img src="../imagenes/logoIcon.png" alt="Logo del Gimnasio" width="400" height="100">
-    
-        <a href="#abierto" class="header__icono"><span class="jam jam-menu"></span></a>
-    
-        <nav class="nav" id="abierto">    
-        <ul class="nav__lista">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>    
-                <li class="nav__item"><a href="../paginas/empresa.html">Empresa</a></li>
-                <li class="nav__item"><a href="../paginas/productos.html">Productos</a></li>
-                <li class="nav__item"><a href="../paginas/contactos.html">Contactos</a></li>
-                <li class="nav__item"><a href="../paginas/faq.html">Preguntas Frecuentes</a></li>
-                <li class="nav__item nav__item--oculto">
-                    <a href="#cerrado">❌</a>
-                </li>
-        </ul>
-    </nav>
+   
+    <header class="navheader">
+
+        <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
+        
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+            <a class="nav-link" href="../paginas/productos.html">Productos</a>
+            <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
+            <a class="nav-link active" aria-current="page" href="../paginas/faq.html">Preguntas Frecuentes</a>
+          </nav>
+
     </header>
     
 
@@ -39,37 +39,96 @@
 
         <h1 class="titulo">Preguntas Frecuentes</h1>
 
-        <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69881.png" alt="icon1" width="100px" height="100px">
-        <h2>FORMAS DE PAGO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad voluptates, non consequatur nam nobis! Debitis facere non officiis minima dolorum. Voluptate, dolore rerum vitae fugiat corrupti provident minus. Earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet autem laborum hic molestias! Enim quas libero ut atque. Sapiente at sunt non? Eius culpa nisi reprehenderit eaque labore doloribus!</p>
-        <br>
-        <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69987.png" alt="icon2" width="100px" height="100px">
-        <h2>ENTREGAS AL INTERIOR</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad voluptates, non consequatur nam nobis! Debitis facere non officiis minima dolorum. Voluptate, dolore rerum vitae fugiat corrupti provident minus. Earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet autem laborum hic molestias! Enim quas libero ut atque. Sapiente at sunt non? Eius culpa nisi reprehenderit eaque labore doloribus!</p>
-        <br>
-        <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69938.png" alt="icon3" width="100px" height="100px">
-        <h2>GARANTIA DE POR VIDA</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad voluptates, non consequatur nam nobis! Debitis facere non officiis minima dolorum. Voluptate, dolore rerum vitae fugiat corrupti provident minus. Earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet autem laborum hic molestias! Enim quas libero ut atque. Sapiente at sunt non? Eius culpa nisi reprehenderit eaque labore doloribus!</p>
-        <br>
-        <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69985.png" alt="icon4" width="100px" height="100px">
-        <h2>SERVICIO TECNICO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad voluptates, non consequatur nam nobis! Debitis facere non officiis minima dolorum. Voluptate, dolore rerum vitae fugiat corrupti provident minus. Earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet autem laborum hic molestias! Enim quas libero ut atque. Sapiente at sunt non? Eius culpa nisi reprehenderit eaque labore doloribus!</p>
-        <br>
 
+       
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69881.png" alt="icon1" width="100px" height="100px">
+                    <h2>FORMAS DE PAGO</h2>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69987.png" alt="icon2" width="100px" height="100px">
+                    <h2>ENTREGAS AL INTERIOR</h2>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69938.png" alt="icon3" width="100px" height="100px">
+                    <h2>GARANTIA DE POR VIDA</h2>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <img class="animate__animated animate__bounce animate__infinite	infinite" src="https://cdn-icons-png.flaticon.com/512/69/69985.png" alt="icon4" width="100px" height="100px">
+                    <h2>SERVICIO TECNICO</h2>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+          
+        
+        
+        </div>
+        
 
     </main>
 
     <footer class="footer">
+        
         <img src="../imagenes/logoFoot.png" alt="logofooter">
-        <p>© FITNESS MACHINE All rights Resevered.</p>
-        <ul>
-            <li><a href="https://www.instagram.com/fitnessmachineok/?hl=es" target="_blank"><img src="../imagenes/instagram.jpg" alt="instagram" height="20" ></a></li>
-            
-            <li><a href="https://www.facebook.com/fitnessmachineok/" target="_blank"><img src="../imagenes/facebook.jpg" alt="facebook" height="20"></a></li>
+            <p>© FITNESS MACHINE All rights Resevered.</p>
 
-            <li><a href="https://twitter.com/fitnessmachine4?lang=es" target="_blank"><img src="../imagenes/twitter.png" alt="twitter" height="20"></a></li>
+        <ul class="nav justify-content-center">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/fitnessmachineok/?hl=es">
+                <img src="../imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/fitnessmachineok/">
+                <img src="../imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/fitnessmachine4?lang=es">
+                    <img src="../imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
+              </li>
         </ul>
 
     </footer>
+
+    <!--Bootstrap java-->
+
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

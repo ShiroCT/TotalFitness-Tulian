@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,29 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
 </head>
 
 <body>
+ 
+    <header class="navheader">
 
-  <!---->  
+    <!--
 
     <header class="header">
         <img src="imagenes/logoIcon.png" alt="Logo del Gimnasio" width="400" height="100">
-    
+
         <a href="#abierto" class="header__icono">
             <span class="jam jam-menu"></span>
         </a>
-    
-        <nav class="nav" id="abierto">    
-        <ul class="nav__lista">
-                <li class="nav__item"><a href="./index.html">Inicio</a></li>    
+
+        <nav class="nav" id="abierto">
+            <ul class="nav__lista">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
                 <li class="nav__item"><a href="./paginas/empresa.html">Empresa</a></li>
                 <li class="nav__item"><a href="./paginas/productos.html">Productos</a></li>
                 <li class="nav__item"><a href="./paginas/contactos.html">Contactos</a></li>
@@ -32,58 +40,118 @@
                 <li class="nav__item nav__item--oculto">
                     <a href="#cerrado">❌</a>
                 </li>
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+
+        -->
+
+
+        <img class="img-thumbnail mx-auto d-block" src="./imagenes/logoIcon.png" alt="Icon">
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link" href="./paginas/empresa.html">Empresa</a>
+            <a class="nav-link" href="./paginas/productos.html">Productos</a>
+            <a class="nav-link" href="./paginas/contactos.html">Contactos</a>
+            <a class="nav-link" href="./paginas/faq.html">Preguntas Frecuentes</a>
+          </nav>
+
+          
+       
+
+
+
     </header>
-    
+
+
     <main class="main mainIndex">
+
+
+
         <div class="center_titulo">
-        <img src="https://seeklogo.com/images/G/gym-logo-F6864948D2-seeklogo.com.png" alt="figuraGym">
+            <img src="https://seeklogo.com/images/G/gym-logo-F6864948D2-seeklogo.com.png" alt="figuraGym">
         </div>
         
-        <h1 class="titulo">LO MEJOR DE LO MEJOR</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Ipsum, sapiente earum repellat ut natus a,
-             iusto voluptas ex quibusdam quidem possimus pariatur distinctio at similique,
-             dolore maxime placeat deleniti excepturi.</h2>
 
-        
-        <section class="inicio1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
 
-            
-            <h1>FABRICANTES DE EQUIPOS PROFESIONALES PARA GIMNASIOS</h1>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Repellat ducimus sint vero, ullam dicta ex,
-                autem fugiat alias hic consectetur similique animi accusantium distinctio,
-                iusto delectus quae nisi vel nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis iure, 
-                iusto veniam quibusdam praesentium. Eos modi harum repellendus, quae explicabo
-                eius rem reiciendis adipisci a? Iure harum quam molestiae.</p>
-            
-                <iframe class="inframe" width="560" height="315" src="https://www.youtube.com/embed/X9HxlNsOYLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-            
-                <h1> VENTA / INSTALACIÓN / SOPORTE / GARANTÍA            </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Id rerum mollitia debitis placeat eos, minus eveniet ullam velit at tenetur explicabo vero ab. 
-                Neque tenetur quod sint reiciendis incidunt quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quisquam fugit earum atque.
-                 Ut quae commodi asperiores laborum incidunt iusto vitae, iure atque illo adipisci recusandae ratione sunt illum molestiae.</p>     
+                    <h1 class="titulo">LO MEJOR DE LO MEJOR</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum, sapiente earum repellat ut natus a,
+                        iusto voluptas ex quibusdam quidem possimus pariatur distinctio at similique,
+                        dolore maxime placeat deleniti excepturi.</h2>
+                </div>
 
-        </section>
+                <div class="col">
+
+                    <section class="inicio1">
+
+
+                        <h1>FABRICANTES DE EQUIPOS PROFESIONALES PARA GIMNASIOS</h1>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellat ducimus sint vero, ullam dicta ex,
+                        </p>
+
+                        <iframe class="inframe" width="560" height="315" src="https://www.youtube.com/embed/X9HxlNsOYLE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </section>
+
+                </div>
+                <div class="col">
+                    <h1> VENTA / INSTALACIÓN / SOPORTE / GARANTÍA </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Id rerum mollitia debitis placeat eos, minus eveniet ullam velit at tenetur explicabo vero ab.
+                        Neque tenetur quod sint reiciendis incidunt quisquam? Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Impedit quisquam fugit earum atque.
+                        Ut quae commodi asperiores laborum incidunt iusto vitae, iure atque illo adipisci recusandae
+                        ratione sunt illum molestiae.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
 
     </main>
 
     <footer class="footer">
-        <img src="./imagenes/logoFoot.png" alt="logofooter">
-        <p>© FITNESS MACHINE All rights Resevered.</p>
-        <ul>
-            <li><a href="https://www.instagram.com/fitnessmachineok/?hl=es" target="_blank"><img src="./imagenes/instagram.jpg" alt="instagram" height="20" ></a></li>
-            
-            <li><a href="https://www.facebook.com/fitnessmachineok/" target="_blank"><img src="./imagenes/facebook.jpg" alt="facebook" height="20"></a></li>
 
-            <li><a href="https://twitter.com/fitnessmachine4?lang=es" target="_blank"><img src="./imagenes/twitter.png" alt="twitter" height="20"></a></li>
-        </ul>
+        <img src="./imagenes/logoFoot.png" alt="logofooter">
+            <p>© FITNESS MACHINE All rights Resevered.</p>
+
+        <ul class="nav justify-content-center">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/fitnessmachineok/?hl=es">
+                <img src="./imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/fitnessmachineok/">
+                <img src="./imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/fitnessmachine4?lang=es">
+                    <img src="./imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
+              </li>
+          </ul>
 
     </footer>
 
+    <!--Bootstrap java-->
+
+    <script src="./js/bootstrap.bundle.js"></script>
+
+
 </body>
+
 </html>

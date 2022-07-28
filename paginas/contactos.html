@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,135 +8,218 @@
     <title>Contactos</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
+
 <body>
-    <header class="header">
-        <img src="../imagenes/logoIcon.png" alt="Logo del Gimnasio" width="400" height="100">
-    
-        <a href="#abierto" class="header__icono"><span class="jam jam-menu"></span></a>
-    
-        <nav class="nav" id="abierto">    
-        <ul class="nav__lista">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>    
-                <li class="nav__item"><a href="../paginas/empresa.html">Empresa</a></li>
-                <li class="nav__item"><a href="../paginas/productos.html">Productos</a></li>
-                <li class="nav__item"><a href="../paginas/contactos.html">Contactos</a></li>
-                <li class="nav__item"><a href="../paginas/faq.html">Preguntas Frecuentes</a></li>
-                <li class="nav__item nav__item--oculto">
-                    <a href="#cerrado">❌</a>
-                </li>
-        </ul>
-    </nav>
+
+    <header class="navheader">
+
+        <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
+
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+            <a class="nav-link" href="../paginas/productos.html">Productos</a>
+            <a class="nav-link active" aria-current="page" href="../paginas/contactos.html">Contactos</a>
+            <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
+        </nav>
+
     </header>
-    
+
 
     <main class="main mainCont">
 
-            <div class="center_titulo">
-                <img src="https://cdn-icons-png.flaticon.com/512/7982/7982315.png" alt="figuraCont" height="200px" width="200px">  
+        <div class="center_titulo">
+            <img src="https://cdn-icons-png.flaticon.com/512/7982/7982315.png" alt="figuraCont" height="200px"
+                width="200px">
+        </div>
+
+        <h1 class="titulo">Contactos</h1>
+
+
+        <div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre:</label>
+                        <div class="col-sm-10">
+                            <input type="nombre" placeholder="Ingrese su Nombre" class="form-control" id="inputNombre">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Apellido:</label>
+                        <div class="col-sm-10">
+                            <input type="apellido" placeholder="Ingrese su Apellido" class="form-control"
+                                id="inputApellido">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Dirección:</label>
+                        <div class="col-sm-10">
+                            <input type="direccion" placeholder="Ingrese su Dirección" class="form-control"
+                                id="inputDireccion">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="Email" placeholder="Ingrese su Email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-------------------------------------------->
+
+
+        
+            <div class=" col-md-6">
+                <h3>¿Que tipo de "Negocio" realiza la consulta?</h3>
+
+                <ul class="row">
+
+                    <li class="flex__hijo"><label for="">-Gym & Clubs-</label>
+                        <input type="radio" name="reside" value="gym">
+                    </li>
+                    <li class="flex__hijo"><label for="">-Edificios & Countries-</label>
+                        <input type="radio" name="reside" value="countrie">
+                    </li>
+                    <li class="flex__hijo"><label for="">-Consultorios-</label>
+                        <input type="radio" name="reside" value="consultorio">
+                    </li>
+                    <li class="flex__hijo"><label for="">-Particular-</label>
+                        <input type="radio" name="reside" value="particulares">
+                    </li>
+
+                </ul>
+
             </div>
 
-            <h1 class="titulo">Contactos</h1>
-
-
-        <div>
-            <h2>FORMULARIO DE CONSULTA</h2>
-
-            <ul class="flex">
-
-            <li class="flex__hijo2"><label for="">Nombre:</label>
-            <Input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required></Input></li>
-            <li class="flex__hijo2"><label for="">Apellido:</label>
-            <Input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido" required></Input></li>
-            <li class="flex__hijo2"><label for="">Provincia:</label>
-            <Input type="text" id="nombre" name="nombre" placeholder="ingrese su provincia" required></Input></li>
-            <li class="flex__hijo2"><label for="">Email:</label>
-            <Input type="email" id="email" name="email" placeholder="ingrese su email" required></Input></li>
-
-            </ul>
-
-        </div>
-        
-        <div>
-            <h2>¿Que tipo de Negocio/s realiza la consulta?</h2>
-            <ul class="flex">
-
-                <li class="flex__hijo"><label for="">-Gym & Clubs-</label>
-                <input type="radio" name="reside" value="gym"></li>
-                <li class="flex__hijo"><label for="">-Edificios & Countries-</label>
-                <input type="radio" name="reside" value="countrie"></li>
-                <li class="flex__hijo"><label for="">-Consultorios-</label>
-                <input type="radio" name="reside" value="consultorio"></li>
-                <li class="flex__hijo"><label for="">Particular</label>
-                <input type="radio" name="reside" value="particulares"></li>
-
-            </ul>
+            <div>
+                <label for="">¿Verifica que los datos son correctos?</label>
+                <input type="checkbox" name="terminos" value="acepto">
+                <br><br>
+            </div>
         </div>
 
+
+
         <div>
-            <label for="">¿Verifica que los datos son correctos?</label>
-            <input type="checkbox" name="terminos" value="acepto">
-            <br><br>
+
+            <h2 style="padding: 2rem;">DETALLE DEL FORMULARIO</h2>
+
+            <div style="padding: 2rem;">
+                <label for="motivo">MOTIVO DEL FORMULARIO</label>
+                <select name="motivo" id="motivo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="Laboral">Laboral</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Legales">Legales</option>
+                    <option value="Reclamo">Reclamo</option>
+                </select>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;"; padding="10rem";></textarea>
+                <label for="floatingTextarea2">Detalle Del Formulario</label>
+            </div>
+
         </div>
 
-        <br>
+   
 
-        <div>
-            <label for="motivo">MOTIVO DEL FORMULARIO</label>
-            <select name="motivo" id="motivo" required>
-                <option value="">Seleccione...</option>
-                <option value="Laboral">Laboral</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Legales">Legales</option>
-                <option value="Reclamo">Reclamo</option>
-            </select>    
-        </div>
-
-    
-        <div>
-            <br><br>
-            <h2>DETALLE DEL FORMULARIO</h2>
-            <br><br>
-            <textarea name="comentario" id="" cols="30" rows="10" required></textarea>
-        </div>
-
-        <br><br>
-    
-        <div>
+        <div style="padding-top: 2rem;">
             <button>Enviar informacion</button>
         </div>
 
-        <div class="cardCh"> 
+        <div class="row" style="padding-top: 2rem;">
+       <div class="col-md-6">
+
+        
+        <div class="card card--azul" style="width: 18rem; height: 200px;" >
+            <img src="https://cdn-icons-png.flaticon.com/512/7424/7424567.png" class="card-img-top" alt="Ubicacion" height="40px"  >
+            <div class="card-body">
+              <h5 class="card-title">Datos Utiles</h5>
+              <span class="card__parrafo"> 29 de septiembre 3735 <br>
+                Remedios de escalada <br>
+                Tel: 011 7509-7616 <br>
+                WhatsApp: 011 5061-0194 <br>
+                Email: info@fitnessmachine.com.ar</span>
+            </div>
+        </div>
+
+        
+      
+
+    
+        <!---
+        <div class="cardCh">
             <h2>FABRICA</h2>
             <img src="../imagenes/icono/iconU.png" alt="Ubicacion" width="50px" height="50px">
             <span> 29 de septiembre 3735 <br>
-
                 Remedios de escalada <br>
-                
                 Tel: 011 7509-7616 <br>
-                
                 WhatsApp: 011 5061-0194 <br>
-                
                 Email: info@fitnessmachine.com.ar</span>
         </div>
+        --->
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26231.08762214732!2d-58.390404000000004!3d-34.733269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdccdd9fb8b056f2a!2sFitness%20Machine!5e0!3m2!1ses-419!2sar!4v1657165214201!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
+
+        <div class="col-md-6">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26231.08762214732!2d-58.390404000000004!3d-34.733269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdccdd9fb8b056f2a!2sFitness%20Machine!5e0!3m2!1ses-419!2sar!4v1657165214201!5m2!1ses-419!2sar"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+    </div>
+    
+    </div>
+    </div>    
 
     </main>
 
     <footer class="footer">
+
         <img src="../imagenes/logoFoot.png" alt="logofooter">
         <p>© FITNESS MACHINE All rights Resevered.</p>
-        <ul>
-            <li><a href="https://www.instagram.com/fitnessmachineok/?hl=es" target="_blank"><img src="../imagenes/instagram.jpg" alt="instagram" height="20" ></a></li>
-            
-            <li><a href="https://www.facebook.com/fitnessmachineok/" target="_blank"><img src="../imagenes/facebook.jpg" alt="facebook" height="20"></a></li>
 
-            <li><a href="https://twitter.com/fitnessmachine4?lang=es" target="_blank"><img src="../imagenes/twitter.png" alt="twitter" height="20"></a></li>
+        <ul class="nav justify-content-center">
+
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/fitnessmachineok/?hl=es">
+                    <img src="../imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/fitnessmachineok/">
+                    <img src="../imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/fitnessmachine4?lang=es">
+                    <img src="../imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
+            </li>
         </ul>
 
     </footer>
-    
+
+
+    <!--Bootstrap java-->
+
+    <script src="../js/bootstrap.bundle.js"></script>
+
 </body>
+
 </html>
