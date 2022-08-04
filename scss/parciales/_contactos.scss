@@ -1,0 +1,66 @@
+.mainCont{
+   
+    background: linear-gradient(white 20%, rgb(8, 57, 1) 40%, silver);
+    text-align: center;
+    color: gold;
+    font-size: 25px;
+
+}
+
+.flex {
+
+
+    list-style: none;
+        padding: 1rem;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center; 
+        flex-flow: row wrap;
+        align-content: flex-start;
+    
+        row-gap: 10px;
+        padding-left: 15px;
+        margin-left: 10px;
+    
+    }
+    
+    .flexCap {
+        border: 1px solid orange ;
+        width: 50%;
+        padding: 1rem;
+    
+    }
+    
+    
+    .flex__hijo { 
+        width: auto;
+        height: 50px;
+        border: 1px solid goldenrod;
+    
+    }
+    
+    .flex__hijo2 { 
+        width: auto;
+        height: 50px;
+    }
+    
+
+    .cardCh {
+        background-color: #FEFEFE;
+        color: black;
+        width: 20%; 
+        height: 250px; 
+        padding: 32px 32px 32px 32px; 
+        margin: 32px 32px 32px 32px; 
+        border: 5px solid grey;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+    }
+    

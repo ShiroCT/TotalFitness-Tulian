@@ -1,0 +1,145 @@
+@media screen and (max-width:1023px) {
+
+    .flex {
+
+        display: grid;
+        grid-column: auto;
+        align-items: center; 
+        
+    }    
+    
+
+    .seccion__titulo{
+        text-align: left;
+    
+    }
+    
+    .right{
+        text-align: left;
+    }
+
+    .cardCh {
+        background-color: #FEFEFE;
+        color: black;
+        width: 200px; 
+        height: 250px; 
+       
+    }
+
+
+}
+
+/*Movil*/
+
+@media screen and (max-width:599px) {
+
+
+    .inframe{
+        width: 360px; 
+        height: 215px;
+
+    
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 200px);
+        grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4" 
+    "img5" 
+    "img6"
+    "img7" 
+    "img8" 
+    "img9";
+
+    align-content:stretch;
+    height: auto; 
+
+    }
+
+    .header__icono{
+        font-size: 45px;
+        background-color: black;
+        display: block;
+    } 
+
+        .nab {
+            display: none;
+            background-color: darkgray;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000000;
+            width: 80%;
+            height: 100vh;
+        }
+    
+        .nav__lista {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            height: 100%;
+        }
+        
+        .header__icono {
+            display: block;
+        }
+    
+        .nav:target {
+            display: block;
+        }
+    
+        .nav__item--oculto {
+            display: block;
+        }
+
+        .inicio {
+            flex-direction: column;
+            padding: 5rem 1rem;
+        }
+    
+        .inicio__der {
+            width: 100%;
+        }
+
+        .card {
+
+            width: 300px; 
+            height: 850px; 
+            display: grid;
+            grid-column: auto;
+
+        }
+
+        .cardCh {
+            background-color: #FEFEFE;
+            color: black;
+            width: 200px; 
+            height: 250px; 
+           
+        }
+
+        .mainFaq{
+            background-color: rgb(83, 29, 29);
+            text-align: center;
+        }
+
+
+        .imagen {
+            text-align: center;
+             width: 100%;
+             height: 75px;
+        }
+
+
+
+
+       
+    
+        
+    }

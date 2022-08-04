@@ -1,0 +1,52 @@
+
+.mainIndex{
+    background-color: grey;
+    background: linear-gradient(white 20%, grey 40%, silver);
+    text-align: center;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.inicio1{
+    background-image: url(../imagenes/gym.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card__mini {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+.aviso {
+    background-color: red;
+    color: white;
+    width: 120px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: outset;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
