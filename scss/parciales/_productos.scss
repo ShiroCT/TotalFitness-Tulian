@@ -5,6 +5,7 @@
 
 }
 
+/*
 .card {
     color: #000;
     width:  300px; 
@@ -13,7 +14,7 @@
     margin: 32px 32px 32px 32px; 
     border: 5px solid grey;
     display: block;
-    border-radius: 10px;
+    border-radius: red 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     display: flex;
@@ -22,6 +23,8 @@
 
     
 }
+
+
 
 .card__imagen {
     width: 100%;
@@ -58,3 +61,95 @@
 .card--verde{
     background-color: green;
 }
+*/
+
+.card__mini {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---*/
+
+.contenedor{
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.item{
+    
+    width: 300px;
+    height: 400px;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.item--nombre{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: black 3px 3px;
+
+}
+
+.item--img{
+
+    width: 100px;
+    height: 100px;
+    bottom: 2rem;
+    
+}
+
+.item--img:hover{
+    transform: scale(130%);
+}
+
+.item--parrafo{
+    text-align: center;
+    font-size: 15px;
+    color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.item--boton{
+    color: black;
+    background-color: silver;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: outset;
+}
+
+.item--boton:hover{
+    color: white;
+    background-color: red;
+}
+
+
+
+

@@ -1,2 +1,26 @@
 $colorPrincipal: gold;
 
+/*map*/
+
+$fondos:(
+    d1:darkgreen,
+    d2:darkblue,
+    d3:goldenrod,
+
+);
+
+/*map-get*/
+
+@for $i from 1 to 4 {
+    .item--d#{$i}{
+        background-color: map-get($fondos, d+$i);
+    }
+    
+}
+
+/*Extent*/
+
+.colorH{
+    color: $colorPrincipal;
+    text-shadow: black 3px 3px;
+}

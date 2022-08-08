@@ -1,0 +1,23 @@
+-----------Cambios----------------
+
+-Cambiar Titulos (Inicio, Empresa)
+-Cambiar Lorems (Inicio, Empresa, FAQ)
+-Imagenes de "imagenes/productos" comprimidas con "tinypng.com/" 
+-Remplazar  3 "card" por  9 "item" individuales en la pagina "Productos.html" y agregar descripciones 
+*agregados efecto en imagenes con ".item--img:hover"
+*agredados botones con efecto ".item--boton:hover"
+*efecto y cuadro de ofertas en algunas cartas.
+  
+-Imagen "/local.png" agregada en cardCh__contactos.html
+
+-//-Mapa "$fondos" en "_variables" 
+-//-Get-map "_variables"  para background-color en "_producto.scss"
+-//-Extend ".colorH" para los titulos en "_base" 
+
+
+SEO agregado: 
+-"keywords" con "fitnessmachine, fitness, Argentina, maquinas, pesas, *nombre de la pagina*" en los 5 paginas.
+-"Title"- agregado "Fitness Machine-" en todas las paginas
+-"favicon.ico" agregado en todas las paginas con "local.png"
+-"description" agregado en todas las paginas con leves deferencias para cada una.
+-<strong> agregado en index.html y empresa.html

@@ -30,14 +30,14 @@
 
     
     
-    &__hijo { 
+    .flex__hijo { 
         width: auto;
         height: 50px;
         border: 1px solid $colorPrincipal;
     
     }
     
-    &__hijo2 { 
+    .flex__hijo2 { 
         width: auto;
         height: 50px;
     }
@@ -49,11 +49,17 @@
     
     }
 
-    .cardCh {
-        background-color: #FEFEFE;
+    @mixin sizes($width, $height) {
+        height: $height;
+        width: $width;
+       }
+    
+       .cardCh {
+        @include sizes (300px, 300px);
+        background-color: darkgreen;
         color: black;
-        width: 20%; 
-        height: 250px; 
+        /*width: 20%; 
+        height: 250px; */
         padding: 32px 32px 32px 32px; 
         margin: 32px 32px 32px 32px; 
         border: 5px solid grey;
@@ -63,5 +69,9 @@
         position: relative;
         text-align: center;
         font-size: 12px;
+    }
+
+    .cardCh--img{
+        @include sizes (100px,auto)
     }
     

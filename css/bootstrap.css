@@ -2044,7 +2044,7 @@ progress {
 }
 
 .table-success {
-  --bs-table-bg: #d1e7dd;
+  --bs-table-bg: green; /*#d1e7dd;*/
   --bs-table-striped-bg: #c7dbd2;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #bcd0c7;
@@ -2056,7 +2056,7 @@ progress {
 }
 
 .table-info {
-  --bs-table-bg: #cff4fc;
+  --bs-table-bg: blue; /* #cff4fc;*/
   --bs-table-striped-bg: #c5e8ef;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #badce3;
@@ -2068,7 +2068,7 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #fff3cd;
+  --bs-table-bg: yellow;/*#fff3cd;*/
   --bs-table-striped-bg: #f2e7c3;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #e6dbb9;

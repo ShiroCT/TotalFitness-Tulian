@@ -1,3 +1,19 @@
+/*map*/
+/*map-get*/
+.item--d1 {
+  background-color: darkgreen; }
+
+.item--d2 {
+  background-color: darkblue; }
+
+.item--d3 {
+  background-color: goldenrod; }
+
+/*Extent*/
+.colorH, h1, h2 {
+  color: gold;
+  text-shadow: black 3px 3px; }
+
 /*Universal */
 * {
   margin: 0;
@@ -9,20 +25,16 @@ a {
   text-decoration: none; }
 
 h1 {
-  color: yellow;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 2rem;
-  text-shadow: black 3px 3px; }
+  padding: 2rem; }
 
 h2 {
-  color: gold;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 25px;
-  text-shadow: black 3px 3px; }
+  font-size: 25px; }
 
 p {
   color: white;
@@ -128,17 +140,6 @@ p {
   background-size: cover;
   background-attachment: fixed; }
 
-.card__mini {
-  background-color: red;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  display: flex;
-  flex-direction: column; }
-
 .seccion {
   width: 100%;
   margin: 0 auto;
@@ -176,11 +177,6 @@ p {
   padding-left: 15px;
   margin-left: 10px; }
 
-.flexCap {
-  border: 1px solid orange;
-  width: 50%;
-  padding: 1rem; }
-
 .flex__hijo {
   width: auto;
   height: 50px;
@@ -190,11 +186,18 @@ p {
   width: auto;
   height: 50px; }
 
+.flexCap {
+  border: 1px solid orange;
+  width: 50%;
+  padding: 1rem; }
+
 .cardCh {
-  background-color: #FEFEFE;
+  height: 300px;
+  width: 300px;
+  background-color: darkgreen;
   color: black;
-  width: 20%;
-  height: 250px;
+  /*width: 20%; 
+        height: 250px; */
   padding: 32px 32px 32px 32px;
   margin: 32px 32px 32px 32px;
   border: 5px solid grey;
@@ -204,6 +207,10 @@ p {
   position: relative;
   text-align: center;
   font-size: 12px; }
+
+.cardCh--img {
+  height: auto;
+  width: 100px; }
 
 .mainEmp {
   background: linear-gradient(white 20%, #1b0580 40%, silver); }
@@ -285,48 +292,132 @@ p {
 .mainPro {
   background: linear-gradient(white 20%, #70056b 40%, silver); }
 
+/*
 .card {
-  color: #000;
-  width: 300px;
-  height: 800px;
-  padding: 32px 32px 32px 32px;
-  margin: 32px 32px 32px 32px;
-  border: 5px solid grey;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  display: flex;
-  flex-direction: column; }
+    color: #000;
+    width:  300px; 
+    height: 800px; 
+    padding: 32px 32px 32px 32px; 
+    margin: 32px 32px 32px 32px; 
+    border: 5px solid grey;
+    display: block;
+    border-radius: red 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+
+    
+}
+
+
 
 .card__imagen {
-  width: 100%;
-  max-height: 200px;
-  border-radius: 10px;
-  margin-bottom: 15px; }
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
 .card__titulo {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  color: white; }
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+}
 
 .card__parrafo {
-  text-align: center;
-  font-size: 10px;
-  color: gainsboro;
+    text-align: center;
+    font-size: 10px;
+    color: gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card--azul{
+    background-color: darkblue;
+}
+
+.card--amarillo{
+    background-color: goldenrod;
+}
+
+.card--verde{
+    background-color: green;
+}
+*/
+.card__mini {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
   display: flex;
   flex-direction: column; }
 
-.card--azul {
-  background-color: darkblue; }
+/*---*/
+.contenedor {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center; }
 
-.card--amarillo {
-  background-color: goldenrod; }
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; }
 
-.card--verde {
-  background-color: green; }
+.item {
+  width: 300px;
+  height: 400px;
+  color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }
+
+.item--nombre {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: black 3px 3px; }
+
+.item--img {
+  width: 100px;
+  height: 100px;
+  bottom: 2rem; }
+
+.item--img:hover {
+  transform: scale(130%); }
+
+.item--parrafo {
+  text-align: center;
+  font-size: 15px;
+  color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem; }
+
+.item--boton {
+  color: black;
+  background-color: silver;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border: outset; }
+
+.item--boton:hover {
+  color: white;
+  background-color: red; }
 
 @media screen and (max-width: 1023px) {
   .flex {
