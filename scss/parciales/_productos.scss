@@ -5,63 +5,6 @@
 
 }
 
-/*
-.card {
-    color: #000;
-    width:  300px; 
-    height: 800px; 
-    padding: 32px 32px 32px 32px; 
-    margin: 32px 32px 32px 32px; 
-    border: 5px solid grey;
-    display: block;
-    border-radius: red 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-   
-
-    
-}
-
-
-
-.card__imagen {
-    width: 100%;
-    max-height: 200px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.card__titulo {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    color: white;
-}
-
-.card__parrafo {
-    text-align: center;
-    font-size: 10px;
-    color: gainsboro;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.card--azul{
-    background-color: darkblue;
-}
-
-.card--amarillo{
-    background-color: goldenrod;
-}
-
-.card--verde{
-    background-color: green;
-}
-*/
 
 .card__mini {
     background-color: red;
@@ -92,6 +35,7 @@
     justify-content: center;
 }
 
+
 .item{
     
     width: 300px;
@@ -105,9 +49,9 @@
     padding-top: 2rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 
-}
 
-.item--nombre{
+
+&--nombre{
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -115,7 +59,7 @@
 
 }
 
-.item--img{
+&--img{
 
     width: 100px;
     height: 100px;
@@ -123,11 +67,7 @@
     
 }
 
-.item--img:hover{
-    transform: scale(130%);
-}
-
-.item--parrafo{
+&--parrafo{
     text-align: center;
     font-size: 15px;
     color: gainsboro;
@@ -136,7 +76,7 @@
     padding-top: 2rem;
 }
 
-.item--boton{
+&--boton{
     color: black;
     background-color: silver;
     position: absolute;
@@ -145,11 +85,18 @@
     border: outset;
 }
 
-.item--boton:hover{
+&--img:hover{
+    transform: scale(130%);
+}
+
+
+&--boton:hover{
     color: white;
     background-color: red;
 }
 
+
+}
 
 
 
