@@ -137,23 +137,37 @@
         }
 
         
-        .logo--tam{
+        .logoTam{
 
-            width: 250px;
+            max-width: 200px;
 
         }
 
         .nav--tam{
             flex-direction: column;
-            max-width: 100% auto;
+            max-width: 90% auto;
             
 
         }
 
         .video--tam {
 
-            width: 280px;
+            width: 100%;
             height: 200px;
+        }
+
+        .imgCh {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        nav {
+            max-width: 300;
+        }
+
+        .main{
+            padding-top: 10rem;
         }
 
 

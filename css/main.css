@@ -146,15 +146,10 @@ p {
   max-width: 1000px; }
 
 .aviso {
-  background-color: red;
-  color: white;
-  width: 120px;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  border: outset;
   position: fixed;
-  right: 2rem;
-  bottom: 2rem; }
+  right: 5rem;
+  bottom: 2rem;
+  border: outset; }
 
 .mainCont {
   background: linear-gradient(white 20%, #083901 40%, silver);
@@ -191,27 +186,34 @@ p {
   width: 50%;
   padding: 1rem; }
 
-.cardCh {
-  height: 300px;
-  width: 300px;
-  background-color: darkgreen;
-  color: black;
-  /*width: 20%; 
-        height: 250px; */
-  padding: 32px 32px 32px 32px;
-  margin: 32px 32px 32px 32px;
-  border: 5px solid grey;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  text-align: center;
-  font-size: 12px; }
+/*--------------
 
-.cardCh--img {
-  height: auto;
-  width: 100px; }
+    @mixin sizes($width, $height) {
+        height: $height;
+        width: $width;
+       }
+    
+       .cardCh {
+        @include sizes (200px, 200px);
+        background-color: darkgreen;
+        color: black;
+        /*width: 20%; 
+        height: 250px; /
+        padding: 32px 32px 32px 32px; 
+        margin: 32px 32px 32px 32px; 
+        border: 5px solid grey;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+    }
 
+    .cardCh--img{
+        @include sizes (100px,auto)
+    }
+    -------------*/
 .mainEmp {
   background: linear-gradient(white 20%, #1b0580 40%, silver); }
 
@@ -418,11 +420,18 @@ p {
     text-align: center;
     width: 100%;
     height: 75px; }
-  .logo--tam {
-    width: 250px; }
+  .logoTam {
+    max-width: 200px; }
   .nav--tam {
     flex-direction: column;
-    max-width: 100% auto; }
+    max-width: 90% auto; }
   .video--tam {
-    width: 280px;
-    height: 200px; } }
+    width: 100%;
+    height: 200px; }
+  .imgCh {
+    width: 200px;
+    height: 200px; }
+  nav {
+    max-width: 300; }
+  .main {
+    padding-top: 10rem; } }

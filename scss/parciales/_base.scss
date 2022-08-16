@@ -3,17 +3,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
 
 
-h1{
+h1 {
     @extend .colorH;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +23,7 @@ h1{
 
 
 
-h2{
+h2 {
     @extend .colorH;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 2rem;
@@ -31,19 +31,19 @@ h2{
     font-size: 25px;
 }
 
-p{
+p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 
-} 
+}
 
 
-.right{
+.right {
     text-align: right;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -52,13 +52,13 @@ p{
     animation-duration: 3s;
 }
 
-.seccion__titulo{
+.seccion__titulo {
     text-align: center;
     padding: 2rem 0;
 
 }
 
-.center_icon{
+.center_icon {
 
     font-size: 100px;
     margin-top: 150px;
@@ -69,7 +69,7 @@ p{
 
 }
 
-.main{
+.main {
     background-repeat: repeat;
     padding: 2rem;
     /*text-decoration: none;*/
@@ -78,15 +78,15 @@ p{
 /*Animacion*/
 
 @keyframes trans {
-    0%{
+    0% {
         opacity: 1;
     }
 
-    50%{
+    50% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -99,7 +99,7 @@ p{
 
     50% {
 
-        transform:scale(1.2);
+        transform: scale(1.2);
 
     }
 
@@ -107,5 +107,3 @@ p{
         transform: scale(1);
     }
 }
-
-
