@@ -49,7 +49,8 @@ p {
 
 .titulo {
   animation-name: trans;
-  animation-duration: 3s; }
+  animation-duration: 3s;
+  font-family: 'Rubik Dirt', cursive; }
 
 .seccion__titulo {
   text-align: center;
@@ -66,7 +67,7 @@ p {
 .main {
   background-repeat: repeat;
   padding: 2rem;
-  /*text-decoration: none;*/ }
+  background: linear-gradient(white 20%, grey 40%, silver); }
 
 /*Animacion*/
 @keyframes trans {
@@ -118,7 +119,7 @@ p {
 .footer {
   text-align: justify;
   font-family: Impact, sans-serif;
-  background-color: silver;
+  background-color: #575757;
   border-top: solid 10px grey;
   border-right: solid 10px darkgrey;
   border-bottom: solid 10px gray;
@@ -186,34 +187,6 @@ p {
   width: 50%;
   padding: 1rem; }
 
-/*--------------
-
-    @mixin sizes($width, $height) {
-        height: $height;
-        width: $width;
-       }
-    
-       .cardCh {
-        @include sizes (200px, 200px);
-        background-color: darkgreen;
-        color: black;
-        /*width: 20%; 
-        height: 250px; /
-        padding: 32px 32px 32px 32px; 
-        margin: 32px 32px 32px 32px; 
-        border: 5px solid grey;
-        display: block;
-        border-radius: 10px;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        position: relative;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .cardCh--img{
-        @include sizes (100px,auto)
-    }
-    -------------*/
 .mainEmp {
   background: linear-gradient(white 20%, #1b0580 40%, silver); }
 

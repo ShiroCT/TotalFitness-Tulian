@@ -50,6 +50,7 @@ p {
 .titulo {
     animation-name: trans;
     animation-duration: 3s;
+    font-family: 'Rubik Dirt', cursive;
 }
 
 .seccion__titulo {
@@ -72,7 +73,7 @@ p {
 .main {
     background-repeat: repeat;
     padding: 2rem;
-    /*text-decoration: none;*/
+    background: linear-gradient(white 20%, grey 40%, silver);
 }
 
 /*Animacion*/
