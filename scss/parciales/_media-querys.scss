@@ -5,13 +5,11 @@
         display: grid;
         grid-column: auto;
         align-items: center; 
-        
     }    
     
 
     .seccion__titulo{
         text-align: left;
-    
     }
     
     .right{
@@ -23,7 +21,6 @@
         color: black;
         width: 200px; 
         height: 250px; 
-       
     }
 
 
@@ -33,12 +30,9 @@
 
 @media screen and (max-width:599px) {
 
-
     .inframe{
         width: 360px; 
         height: 215px;
-
-    
     }
 
     .grid {
@@ -55,10 +49,8 @@
     "img7" 
     "img8" 
     "img9";
-
     align-content:stretch;
     height: auto; 
-
     }
 
     .header__icono{
@@ -108,12 +100,10 @@
         }
 
         .card {
-
             width: 300px; 
             height: 850px; 
             display: grid;
             grid-column: auto;
-
         }
 
         .cardCh {
@@ -121,7 +111,6 @@
             color: black;
             width: 200px; 
             height: 250px; 
-           
         }
 
         .mainFaq{
@@ -129,51 +118,33 @@
             text-align: center;
         }
 
-
         .imagen {
             text-align: center;
              width: 100%;
              height: 75px;
         }
-
         
         .logoTam{
-
             max-width: 200px;
-
         }
 
         .nav--tam{
             flex-direction: column;
             max-width: 90% auto;
-            
-
         }
 
         .video--tam {
-
-            width: 100%;
+            width: 80%;
             height: 200px;
         }
 
         .imgCh {
             width: 200px;
             height: 200px;
-
         }
 
         nav {
             max-width: 300;
         }
-
-        .main{
-            padding-top: 10rem;
-        }
-
-
-
-
-       
-    
-        
+ 
     }

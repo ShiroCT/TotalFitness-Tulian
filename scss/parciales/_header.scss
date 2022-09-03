@@ -5,33 +5,10 @@
     width: 100%;
     position: fixed;
     background: rgb(255,255,255);
-
 }
 
-.header__icono {
-    font-size: 45px;
-    background-color: black;
-    display: none;
-
-}
-
-.nav__lista{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
-.nav__item{
-    margin-left: 16px;
-}
-
-.nav-link:hover {
-    animation-name: grande;
-    animation-duration: 2s;
-    animation-iteration-count: 5;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: cubic-bezier();
+.active{
+    background-color: yellow;
+    font-weight: bolder;
+    border-radius: 1rem;
 }

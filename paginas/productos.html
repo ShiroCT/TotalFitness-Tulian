@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -17,46 +17,59 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
-
   <!-- css >> scss -->
   <link rel="stylesheet" href="../css/main.css">
-
   <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!--Bootstrap-->
 
   <link rel="stylesheet" href="../css/bootstrap.css">
-
 </head>
 
 <body>
   <header class="navheader">
 
-    <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
-
-    <nav class="nav nav-pills nav-justified nav--tam">
-      <a class="nav-link" href="../index.html">Inicio</a>
-      <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
-      <a class="nav-link active" aria-current="page" href="../paginas/productos.html">Productos</a>
-      <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
-      <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
-    </nav>
-
+    <div class="container-fluid">
+      <!--BARRA--->
+      <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"> <img class="logoTam" src="../imagenes/logoIcon.png" alt="logoIcon"></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle= "collapse" data-bs-target="#MenuNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <ul class="navbar-nav">    
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../paginas/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </nav>
+    </div>
   </header>
-
 
   <main class="main">
 
     <div class="center">
-      <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/2936/2936878.png" alt="figuraPro"
+      <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/1198/1198416.png" alt="figuraPro"
         height="200px" width="200px">
     </div>
 
     <h1 class="titulo">Productos</h1>
-
-
-
     <!-------------------------------->
     <section>
       <h2>Favoritos</h2>
@@ -225,7 +238,6 @@
           <td colspan="2">Minigimnasio</td>
           <td>Fuera de Stock</td>
         </tr>
-
       </tbody>
     </table>
 
@@ -260,5 +272,4 @@
 
   <script src="../js/bootstrap.bundle.js"></script>
 </body>
-
 </html>

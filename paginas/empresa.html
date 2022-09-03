@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,10 @@
 
     <title>Fitness Machine-Empresa</title>
 
-     <!--Google Fonts -Rubik Dirt -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+    <!--Google Fonts -Rubik Dirt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
     <!-- css >> scss -->
     <link rel="stylesheet" href="../css/main.css">
@@ -34,15 +34,39 @@
 
     <header class="navheader">
 
-        <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
-
-        <nav class="nav nav-pills nav-justified nav--tam">
-            <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link active" aria-current="page" href="../paginas/empresa.html">Empresa</a>
-            <a class="nav-link" href="../paginas/productos.html">Productos</a>
-            <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
-            <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
-        </nav>
+        <div class="container-fluid">
+            <!--BARRA--->
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"> <img class="logoTam" src="../imagenes/logoIcon.png"
+                            alt="logoIcon"></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../paginas/empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
     </header>
 
@@ -50,21 +74,17 @@
 
     <main class="main">
 
-
         <div class="center">
-            <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/1026/1026713.png" alt="figuraEmp"
-                height="200px" width="200px">
+            <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/1912/1912766.png" alt="figuraEmp"
+            height="200px" width="200px">
         </div>
 
         <h1 class="titulo">Empresa</h1>
 
-
         <div class="container">
             <div class="row">
                 <div class="col">
-
                     <section class="seccion">
-
                         <div>
                             <h2>Historia de la Empresa</h2>
                             <p><strong> Víctor Nievas, responsable de la organización, desde hace más de 20 años,
@@ -79,9 +99,65 @@
                             </p>
                         </div>
 
-                        <div class="center animate__animated animate__backInLeft ">
-                            <img src="https://w0.peakpx.com/wallpaper/630/99/HD-wallpaper-gym-workout-pilates-fitness-exercises-for-abs-physical-exercise.jpg"
-                                alt="mediaImg" width="80%" height="200">
+                        <div class="col">
+                            <!--Galeria-->
+                            <h2 class="seccion__titulo">Fotos Historicas</h2>
+                            <div class="grid">
+                                <div class="grid__hijo grid__hijo--1">
+                                    <img class="grid__img"
+                                        src="https://i.pinimg.com/originals/3b/ca/92/3bca924c70ef657a7aaca4bcde8e6622.jpg"
+                                        alt="Imagen1" width="100" height="100">
+                                    <span class="grid__text">año 1935</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--2">
+                                    <img class="grid__img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgz1m0cE4Juym1d9RiJ8AHOckkmjXURxWbTboVCQuEwDK1Dk918BXXMbM16Hwggf-cJf8&usqp=CAU"
+                                        alt="Imagen2" width="100" height="100">
+                                    <span class="grid__text">año 1930</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--3">
+                                    <img class="grid__img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlHzC7TydIBd9z8JvGk1FBRNEIStqLabjWw&usqp=CAU"
+                                        alt="Imagen3" width="100" height="100">
+                                    <span class="grid__text">año 1940</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--4">
+                                    <img class="grid__img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiFGk3K60NvDHcI9LXNCaotR4cWXs5LrW-w&usqp=CAU"
+                                        alt="Imagen4" width="100" height="100">
+                                    <span class="grid__text">año 1995</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--5">
+                                    <img class="grid__img"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnolz5TTmd3UWS7c1boUohVn5csHK-tiKwww&usqp=CAU"
+                                        alt="Imagen5" width="100" height="100">
+                                    <span class="grid__text">año 2000</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--6">
+                                    <span class="grid__text">año 2005</span>
+                                    <img class="grid__img"
+                                        src="https://i0.wp.com/votoenblanco.com.mx/wp-content/uploads/2021/12/IMG_7680.jpg?fit=972%2C648&ssl=1"
+                                        alt="Imagen6" width="100" height="100">
+                                </div>
+                                <div class="grid__hijo grid__hijo--7">
+                                    <img class="grid__img"
+                                        src="https://5.imimg.com/data5/CD/XV/HH/SELLER-36375248/commercial-gym-setup-services-500x500.jpeg"
+                                        alt="Imagen7" width="100" height="100">
+                                    <span class="grid__text">año 2013</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--8">
+                                    <img class="grid__img"
+                                        src="https://infodeportes.com.ar/wp-content/uploads/2022/02/El-Hotel-Hilton-apuesta-por-el-fitness.png"
+                                        alt="Imagen8" width="100" height="100">
+                                    <span class="grid__text">año 2020</span>
+                                </div>
+                                <div class="grid__hijo grid__hijo--9">
+                                    <img class="grid__img"
+                                        src="https://www.palco23.com/files/0002017/000redaccion/fitness/the%20gym/the-gym-948.jpg"
+                                        alt="Imagen9" width="100" height="100">
+                                    <span class="grid__text">año 2021</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="center">
@@ -89,90 +165,15 @@
                             <p>
                                 Fitness Machine es una empresa dedicada al diseño y a la producción de máquinas de
                                 musculación para gimnasios que requieren del más alto nivel en sus equipamientos.
-
                                 <strong>FitnessMachine los clientes son muy importantes</strong>, es por eso que nuestro
                                 servicio integrado resuelve todas las etapas importantes del proceso.
                             </p>
                         </div>
-
-
-
-
-                </div>
-
-                <div class="col">
-                    <h2 class="seccion__titulo">Fotos Historicas</h2>
-                    <div class="grid">
-                        <div class="grid__hijo grid__hijo--1">
-                            <img class="grid__img"
-                                src="https://i.pinimg.com/originals/3b/ca/92/3bca924c70ef657a7aaca4bcde8e6622.jpg"
-                                alt="Imagen1" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--2">
-                            <img class="grid__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgz1m0cE4Juym1d9RiJ8AHOckkmjXURxWbTboVCQuEwDK1Dk918BXXMbM16Hwggf-cJf8&usqp=CAU"
-                                alt="Imagen2" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--3">
-                            <img class="grid__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlHzC7TydIBd9z8JvGk1FBRNEIStqLabjWw&usqp=CAU"
-                                alt="Imagen3" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--4">
-                            <img class="grid__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiFGk3K60NvDHcI9LXNCaotR4cWXs5LrW-w&usqp=CAU"
-                                alt="Imagen4" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--5">
-                            <img class="grid__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnolz5TTmd3UWS7c1boUohVn5csHK-tiKwww&usqp=CAU"
-                                alt="Imagen5" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--6">
-                            <span class="grid__text">año xXxX</span>
-                            <img class="grid__img"
-                                src="https://i0.wp.com/votoenblanco.com.mx/wp-content/uploads/2021/12/IMG_7680.jpg?fit=972%2C648&ssl=1"
-                                alt="Imagen6" width="100" height="100">
-                        </div>
-                        <div class="grid__hijo grid__hijo--7">
-                            <img class="grid__img"
-                                src="https://5.imimg.com/data5/CD/XV/HH/SELLER-36375248/commercial-gym-setup-services-500x500.jpeg"
-                                alt="Imagen7" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--8">
-                            <img class="grid__img"
-                                src="https://infodeportes.com.ar/wp-content/uploads/2022/02/El-Hotel-Hilton-apuesta-por-el-fitness.png"
-                                alt="Imagen8" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-                        <div class="grid__hijo grid__hijo--9">
-                            <img class="grid__img"
-                                src="https://www.palco23.com/files/0002017/000redaccion/fitness/the%20gym/the-gym-948.jpg"
-                                alt="Imagen9" width="100" height="100">
-                            <span class="grid__text">año xXxX</span>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
         </section>
-
     </main>
-
-
 
     <footer class="footer">
 
@@ -198,9 +199,7 @@
     </footer>
 
     <!--Bootstrap java-->
-
     <script src="../js/bootstrap.bundle.js"></script>
 
 </body>
-
 </html>

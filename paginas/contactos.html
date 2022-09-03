@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,84 +16,89 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
- 
 
     <!-- css >> scss -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
     <!--Bootstrap-->
-
     <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
-
 <body>
 
     <header class="navheader">
-
-        <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
-
-        <nav class="nav nav-pills nav-justified nav--tam">
-            <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
-            <a class="nav-link" href="../paginas/productos.html">Productos</a>
-            <a class="nav-link active" aria-current="page" href="../paginas/contactos.html">Contactos</a>
-            <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
-        </nav>
-
+        <div class="container-fluid">
+            <!--BARRA--->
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+            <div class="container-fluid">
+              <a href="#" class="navbar-brand"> <img class="logoTam" src="../imagenes/logoIcon.png" alt="logoIcon"></a>
+              <button type="button" class="navbar-toggler" data-bs-toggle= "collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <ul class="navbar-nav">    
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../paginas/contactos.html">Contactos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/faq.html">Preguntas Frecuentes</a>
+                  </li>
+                </ul>
+              </div>
+             </div>
+            </nav>
+          </div>
     </header>
 
-
     <main class="main">
-
         <div class="center">
-            <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/7982/7982315.png" alt="figuraCont"
-                height="200px" width="200px">
+            <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/7424/7424567.png" alt="figuraCont"
+            height="200px" width="200px">
         </div>
-
         <h1 class="titulo">Contactos</h1>
-
-
         <div>
-
             <div class="row">
-
                 <div class="col-md-6">
 
                     <div class="row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre:</label>
                         <div class="col-sm-10">
-                            <input type="nombre" placeholder="Ingrese su Nombre" class="form-control" id="inputNombre">
+                        <input type="nombre" placeholder="Ingrese su Nombre" class="form-control" id="inputNombre">
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Apellido:</label>
                         <div class="col-sm-10">
-                            <input type="apellido" placeholder="Ingrese su Apellido" class="form-control"
-                                id="inputApellido">
+                        <input type="apellido" placeholder="Ingrese su Apellido" class="form-control"
+                        id="inputApellido">
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Dirección:</label>
                         <div class="col-sm-10">
-                            <input type="direccion" placeholder="Ingrese su Dirección" class="form-control"
-                                id="inputDireccion">
+                        <input type="direccion" placeholder="Ingrese su Dirección" class="form-control"
+                        id="inputDireccion">
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <label for="inputPassword3" class="col-sm-2 col-form-label">Email:</label>
                         <div class="col-sm-10">
-                            <input type="Email" placeholder="Ingrese su Email" class="form-control" id="inputEmail">
+                        <input type="Email" placeholder="Ingrese su Email" class="form-control" id="inputEmail">
                         </div>
                     </div>
-
                 </div>
-
-
-                <!-------------------------------------------->
+                <!------------------------------------------->
                 <div class=" col-md-6">
                     <h3>¿Que tipo de "Negocio" realiza la consulta?</h3>
 
@@ -124,15 +129,9 @@
                             -Particular-
                         </label>
                     </div>
-
-
-
                 </div>
-                <!-------------------------------------------->
-
-
             </div>
-
+            <!-------------------------------------------->
             <div>
                 <label for="">¿Verifica que los datos son correctos?</label>
                 <input type="checkbox" name="terminos" value="acepto">
@@ -140,12 +139,8 @@
             </div>
         </div>
 
-
-
         <div>
-
             <h2 style="padding: 2rem;">DETALLE DEL FORMULARIO</h2>
-
             <div style="padding: 2rem;">
                 <label for="motivo">MOTIVO DEL FORMULARIO</label>
                 <select name="motivo" id="motivo" required>
@@ -159,80 +154,61 @@
 
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 200px;" ; padding="10rem" ;></textarea>
+                style="height: 200px;" ; padding="10rem" ;></textarea>
                 <label for="floatingTextarea2">Detalle Del Formulario</label>
             </div>
-
         </div>
 
-
-
         <div style="padding-top: 2rem;">
-            <button>Enviar informacion</button>
+            <button class="envio">Enviar informacion</button>
         </div>
 
         <div class="row" style="padding-top: 2rem;">
             <div class="col-md-6">
 
-
-                <div class="item item--d1">
-                    <p class="item--nombre">Datos Utiles</p>
-                    <img class="item--img" src="../imagenes/local.png" alt="card-img-top">
-                    <p class="item--parrafo">29 de septiembre 3735 <br>
+                <div class="carta">
+                    <p class="carta--nombre">Datos Utiles</p>
+                    <img class="carta--img" src="../imagenes/local.png" alt="card-img-top">
+                    <p class="carta--parrafo">29 de septiembre 3735 <br>
                         Remedios de escalada <br>
                         Tel: 011 7509-7616 <br>
                         WhatsApp: 011 5061-0194 <br>
                         Email: info@fitnessmachine.com.ar</p>
                 </div>
-
-
-
             </div>
-
-
-            <div class="col-md-6">
+            <div class="col-md-6 mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26231.08762214732!2d-58.390404000000004!3d-34.733269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdccdd9fb8b056f2a!2sFitness%20Machine!5e0!3m2!1ses-419!2sar!4v1657165214201!5m2!1ses-419!2sar"
                     width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
         </div>
-
-        </div>
-        </div>
+    </div>
+</div>
 
     </main>
 
     <footer class="footer">
-
         <img src="../imagenes/logoFoot.png" alt="logofooter">
         <p>© FITNESS MACHINE All rights Resevered.</p>
-
         <ul class="nav justify-content-center">
-
             <li class="nav-item">
                 <a class="nav-link" href="https://www.instagram.com/fitnessmachineok/?hl=es">
-                    <img src="../imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
+                <img src="../imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://www.facebook.com/fitnessmachineok/">
-                    <img src="../imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
+                <img src="../imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/fitnessmachine4?lang=es">
-                    <img src="../imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
+                <img src="../imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
             </li>
         </ul>
-
     </footer>
 
-
     <!--Bootstrap java-->
-
     <script src="../js/bootstrap.bundle.js"></script>
-
 </body>
-
 </html>

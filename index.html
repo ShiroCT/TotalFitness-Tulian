@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,7 @@
     <meta name="description"
         content="Copia de FitnessMachine para curso de Desarrollo Web en CoderHouse. Pagina de prensentación con lo mas llamativo">
 
-
     <title>Fitness Machine-Inicio</title>
-
-
 
     <!--css >> scss -->
     <link rel="stylesheet" href="./css/main.css">
@@ -28,38 +25,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
     <!--Bootstrap-->
-
     <link rel="stylesheet" href="./css/bootstrap.css">
-
 
 </head>
 
 <body>
-
     <header class="navheader">
-
-
-        <img class="img-thumbnail mx-auto d-block logoTam" src="./imagenes/logoIcon.png" alt="Icon">
-
-        <nav class="nav nav-pills nav-justified nav--tam">
-            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-            <a class="nav-link" href="./paginas/empresa.html">Empresa</a>
-            <a class="nav-link" href="./paginas/productos.html">Productos</a>
-            <a class="nav-link" href="./paginas/contactos.html">Contactos</a>
-            <a class="nav-link" href="./paginas/faq.html">Preguntas Frecuentes</a>
-        </nav>
-
-
-
-
-
-
+        <div class="container-fluid">
+            <!--BARRA--->
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+            <div class="container-fluid">
+              <a href="#" class="navbar-brand"> <img class="logoTam" src="./imagenes/logoIcon.png" alt="logoIcon"></a>
+              <button type="button" class="navbar-toggler" data-bs-toggle= "collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <ul class="navbar-nav">    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/contactos.html">Contactos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/faq.html">Preguntas Frecuentes</a>
+                  </li>
+        
+                </ul>
+              </div>
+             </div>
+            </nav>
+          </div>
     </header>
 
-
     <main class="main mainIndex">
-
-
 
         <div class="center">
             <img class="center_icon imgCh" src="https://seeklogo.com/images/G/gym-logo-F6864948D2-seeklogo.com.png"
@@ -67,23 +72,17 @@
         </div>
         <h1 class="titulo">Fitness Machine</h1>
 
-
         <div class="container">
             <div class="row">
-                <div class="col">
-
+                <div class="col-sm-2 col-lg-2">
                     <h2>Lo mejor de lo mejor</h2>
                     <p><strong>Con más de 30 años de trayectoria</strong>, lideramos el mercado del Fitness Argentino.
                         En producción, distribución y en consultoría de equipos profesionales de primera calidad, para
-                        el diseño e instalación de gimnasios y salas de fitness. Por ello, tanto las mayores cadenas de
-                        gimnasios, como los particulares, Clubes, Hoteles, Condominios y Countries de nuestro país, nos
-                        siguen eligiendo para armar el gimnasio de sus sueños.</p>
+                        el diseño e instalación de gimnasios y salas de fitness.</p>
                 </div>
 
-                <div class="col">
-
+                <div class="col-sm-8 col-lg-8">
                     <section class="inicio1">
-
 
                         <h2>Fabricantes de equipos profesionales para gimnasios</h2>
 
@@ -96,10 +95,14 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
 
+                        <p>Por ello, tanto las mayores cadenas de
+                            gimnasios, como los particulares, Clubes, Hoteles, Condominios y Countries de nuestro país, nos
+                            siguen eligiendo para armar el gimnasio de sus sueños.</p>
+
                     </section>
 
                 </div>
-                <div class="col">
+                <div class="col-sm-2 col-lg-2">
                     <h2> Venta / Instalación / Soporte / Garantía </h2>
                     <p>
                         Fitness Machine cuenta con personal capacitado para realizar el armado en el local ó piso de su
@@ -107,53 +110,39 @@
                             servicio a un bajo costo y capacitación de mantenimiento </strong> junto con un cd que
                         permitirá solucionar problemas al instante.
                     </p>
-
                 </div>
             </div>
         </div>
-
 
         <div class="aviso">
             <a href="./paginas/productos.html">
                 <img src="imagenes/oferta.png" alt="sales" href="./paginas/productos.html" height="70" width="150">
             </a>
-
         </div>
-
-
-
-
-
     </main>
 
     <footer class="footer">
 
         <img src="./imagenes/logoFoot.png" alt="logofooter">
         <p>© FITNESS MACHINE All rights Resevered.</p>
-
         <ul class="nav justify-content-center">
-
-            <li class="nav-item">
+            <li class="nav-item foo-link">
                 <a class="nav-link" href="https://www.instagram.com/fitnessmachineok/?hl=es">
                     <img src="./imagenes/instagram.jpg" alt="instagram" height="20"> Instagram</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item foo-link">
                 <a class="nav-link" href="https://www.facebook.com/fitnessmachineok/">
                     <img src="./imagenes/facebook.jpg" alt="facebook" height="20"> Facebook</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item foo-link">
                 <a class="nav-link" href="https://twitter.com/fitnessmachine4?lang=es">
                     <img src="./imagenes/twitter.png" alt="twitter" height="20"> Twitter</a>
             </li>
         </ul>
-
     </footer>
 
     <!--Bootstrap java-->
-
     <script src="./js/bootstrap.bundle.js"></script>
 
-
 </body>
-
 </html>

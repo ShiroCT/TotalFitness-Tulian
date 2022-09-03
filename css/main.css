@@ -67,7 +67,7 @@ p {
 .main {
   background-repeat: repeat;
   padding: 2rem;
-  background: linear-gradient(white 20%, grey 40%, silver); }
+  background: linear-gradient(white 10%, grey 40%, silver); }
 
 /*Animacion*/
 @keyframes trans {
@@ -94,27 +94,10 @@ p {
   position: fixed;
   background: white; }
 
-.header__icono {
-  font-size: 45px;
-  background-color: black;
-  display: none; }
-
-.nav__lista {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  align-items: center; }
-
-.nav__item {
-  margin-left: 16px; }
-
-.nav-link:hover {
-  animation-name: grande;
-  animation-duration: 2s;
-  animation-iteration-count: 5;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-timing-function: cubic-bezier(); }
+.active {
+  background-color: yellow;
+  font-weight: bolder;
+  border-radius: 1rem; }
 
 .footer {
   text-align: justify;
@@ -125,6 +108,14 @@ p {
   border-bottom: solid 10px gray;
   border-left: solid 10px darkgrey;
   text-align: center; }
+
+.foo-link:hover {
+  animation-name: grande;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(); }
 
 .mainIndex {
   background-color: grey;
@@ -152,51 +143,52 @@ p {
   bottom: 2rem;
   border: outset; }
 
-.mainCont {
-  background: linear-gradient(white 20%, #083901 40%, silver);
-  text-align: center;
-  color: gold;
-  font-size: 25px; }
+.video--tam {
+  width: 80%; }
 
-.flex {
-  list-style: none;
+.envio:hover {
+  color: white;
+  background-color: goldenrod; }
+
+.carta {
+  width: 300px;
+  height: 400px;
+  color: white;
+  border-radius: 2rem;
   padding: 1rem;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  align-content: flex-start;
-  row-gap: 10px;
-  padding-left: 15px;
-  margin-left: 10px; }
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #454545; }
+  .carta--nombre {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: black 3px 3px; }
+  .carta--img {
+    width: 100px;
+    height: 100px;
+    bottom: 2rem; }
+  .carta--parrafo {
+    text-align: center;
+    font-size: 15px;
+    color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem; }
 
-.flex__hijo {
-  width: auto;
-  height: 50px;
-  border: 1px solid gold; }
-
-.flex__hijo2 {
-  width: auto;
-  height: 50px; }
-
-.flexCap {
-  border: 1px solid orange;
-  width: 50%;
-  padding: 1rem; }
-
-.mainEmp {
-  background: linear-gradient(white 20%, #1b0580 40%, silver); }
+.mapa {
+  padding: 3rem; }
 
 .grid {
   border: 3px solid lightgray;
   padding: 1rem;
   height: 1000px;
   display: grid;
-  /*  */
   /*columnas y filas*/
+  /*  */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 10px;
@@ -249,11 +241,8 @@ p {
 .nav__item--oculto {
   display: none; }
 
-.mainFaq {
-  background: linear-gradient(white 20%, red 40%, silver); }
-
-.mainPro {
-  background: linear-gradient(white 20%, #70056b 40%, silver); }
+.atencion:hover {
+  background-color: goldenrod; }
 
 .card__mini {
   background-color: red;
@@ -399,12 +388,10 @@ p {
     flex-direction: column;
     max-width: 90% auto; }
   .video--tam {
-    width: 100%;
+    width: 80%;
     height: 200px; }
   .imgCh {
     width: 200px;
     height: 200px; }
   nav {
-    max-width: 300; }
-  .main {
-    padding-top: 10rem; } }
+    max-width: 300; } }

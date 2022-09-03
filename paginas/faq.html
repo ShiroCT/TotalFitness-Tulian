@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -18,53 +18,69 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
-
   <!-- css >> scss -->
   <link rel="stylesheet" href="../css/main.css">
-
   <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!--Bootstrap-->
-
   <link rel="stylesheet" href="../css/bootstrap.css">
 
 </head>
-
 <body>
 
   <header class="navheader">
-
-    <img class="img-thumbnail mx-auto d-block" src="../imagenes/logoIcon.png" alt="Icon">
-
-    <nav class="nav nav-pills nav-justified nav--tam">
-      <a class="nav-link" href="../index.html">Inicio</a>
-      <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
-      <a class="nav-link" href="../paginas/productos.html">Productos</a>
-      <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
-      <a class="nav-link active" aria-current="page" href="../paginas/faq.html">Preguntas Frecuentes</a>
-    </nav>
-
+    <div class="container-fluid">
+      <!--BARRA--->
+      <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"> <img class="logoTam" src="../imagenes/logoIcon.png" alt="logoIcon"></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle= "collapse" data-bs-target="#MenuNavegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <ul class="navbar-nav">    
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../paginas/faq.html">Preguntas Frecuentes</a>
+            </li>
+  
+          </ul>
+        </div>
+       </div>
+      </nav>
+    </div>
   </header>
-
 
   <main class="main">
 
     <div class="center">
-      <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/2936/2936893.png" alt="figuraFaq"
-        height="200px" width="200px">
+      <img class="center_icon" src="https://cdn-icons-png.flaticon.com/512/3306/3306827.png" alt="figuraFaq"
+      height="200px" width="200px">
     </div>
-
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Advertencia:</strong> Los que son no son utilizados para su proposito orginal despues de entregados y/o
-      instalados, pierden cualquier tipo de garantia.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
 
     <h1 class="titulo">Preguntas Frecuentes</h1>
 
-
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Advertencia:</strong> Los que son no son utilizados para su proposito orginal despues de entregados y/o
+      instalados, pierden cualquier tipo de garantia.<br><br>
+      Recuerde consultar los <strong>Codigos y Tipo</strong> de los productos en la pagina "Productos" para una mejor comunicacion.
+      <div style="padding-top: 2rem;">
+        <a class="btn atencion" href="../paginas/productos.html" role="button">Ir a Pagina</a>
+    </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
     <div class="col-12 col-md-10 offset-md-1">
 
@@ -148,11 +164,7 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
-
     </div>
 
   </main>
@@ -181,8 +193,6 @@
   </footer>
 
   <!--Bootstrap java-->
-
   <script src="../js/bootstrap.bundle.js"></script>
 </body>
-
 </html>

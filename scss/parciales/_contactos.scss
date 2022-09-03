@@ -1,54 +1,46 @@
-.mainCont {
+.envio:hover{
+    color: white;
+    background-color: goldenrod;
+}
 
-    background: linear-gradient(white 20%, rgb(8, 57, 1) 40%, silver);
+.carta{ 
+    width: 300px;
+    height: 400px;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    position: relative;
+    justify-content: space-between;
     text-align: center;
-    color: $colorPrincipal;
-    font-size: 25px;
+    padding-top: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(69, 69, 69);
+
+&--nombre{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: black 3px 3px;
 
 }
 
-.flex {
+&--img{
+    width: 100px;
+    height: 100px;
+    bottom: 2rem;
+    
+}
 
-
-    list-style: none;
-    padding: 1rem;
-    height: auto;
+&--parrafo{
+    text-align: center;
+    font-size: 15px;
+    color: gainsboro;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    align-content: flex-start;
-
-    row-gap: 10px;
-    padding-left: 15px;
-    margin-left: 10px;
-
+    flex-direction: column;
+    padding-top: 2rem;
+}
 }
 
-
-
-
-.flex__hijo {
-    width: auto;
-    height: 50px;
-    border: 1px solid $colorPrincipal;
-
+.mapa{
+    padding: 3rem;
 }
-
-.flex__hijo2 {
-    width: auto;
-    height: 50px;
-}
-
-.flexCap {
-    border: 1px solid orange;
-    width: 50%;
-    padding: 1rem;
-
-}
-
-
-
-

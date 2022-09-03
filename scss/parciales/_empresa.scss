@@ -1,34 +1,18 @@
-
-.mainEmp{
-    
-    background: linear-gradient(white 20%, rgb(27, 5, 128) 40%, silver);
-}
-
-
-
 .grid{
     border: 3px solid lightgray;
     padding: 1rem;
     height: 1000px;
     display: grid;
-
-    /*  */
-
-    /*columnas y filas*/
-
+    /*columnas y filas*/ /*  */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
 
-
     grid-template-areas: 
     "img1 img2 img2 img3"
     "img4 img4 img5 img6"
     "img7 img8 img9 img9";
-
-
-
 
 &__text{
     position: absolute;
@@ -44,14 +28,11 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-
-
 }
 
 &__hijo--1{
     grid-area: img1;
     background-color: gray;
-
 }
 
 &__hijo--2{
@@ -69,7 +50,6 @@
 &__hijo--4{
     grid-area: img4;
     background-color: gray;
-
 }
 
 &__hijo--5{

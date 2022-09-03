@@ -8,5 +8,13 @@
     border-bottom:solid 10px gray;
     border-left:solid 10px darkgrey;
     text-align: center;
-       
+}
+
+.foo-link:hover {
+    animation-name: grande;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier();
 }

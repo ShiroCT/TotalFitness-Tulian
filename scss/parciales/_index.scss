@@ -8,8 +8,6 @@
 .inicio{
     display: flex;
     flex-direction: row;
-
-
 }
 
 .inicio1{
@@ -19,21 +17,19 @@
     background-attachment: fixed;
 }
 
-
-
 .seccion{
     width: 100%;
     margin: 0 auto;
     max-width: 1000px;
-
 }
 
 .aviso {
-    
     position: fixed;
     right: 5rem;
     bottom: 2rem;
     border: outset;
+}
 
-
+.video--tam{
+    width: 80%;
 }
